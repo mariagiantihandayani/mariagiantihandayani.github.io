@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+	<title>Curiculum vitae</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+	<style type="text/css">
+	@font-face{
+		font-family: Animal;
+		src: url(fonts/ROCKB.TTF);
+	}
+	body{
+		padding:0px;
+		margin:0px;
+		background-color:#000;
+		}
+		.sidebar{
+			width: 6%;
+			background-color: #808080;
+			height: 643px;
+			float: left;
+		}
+		.content{
+			width: 94%;
+			background-color: #fff;
+			height: 650px;
+			float: left;
+		}
+		.content-1{
+			width: 50%;
+			background-color:  #383636;
+			height: 650px;
+			float: left;
+		}
+		.content-2{
+			width: 50%;
+			background-color: #806f66;
+			height: 650px;
+			float: left;
+		}
+		.sidebar-1{
+			width: 100%;
+			background-color:  #806f66;
+			height: 65px;
+		}	
+	
+	
+		.sidebar-2{
+			width: 100%;
+			background-color: #222222;
+			height: 585px;
+		}
+		.home{
+			width: 100%;
+			background-color: #660000;
+			height: 68px;
+		}
+		/*.homeWord{
+		left: 95px;
+        position: absolute;
+        top: 90px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		height: 30px;
+		width: 100px;
+		text-align: center;
+		padding-top: 10px;
+		}
+		.home:hover .homeWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+		 
+		}*/
+		.profile{
+			width: 100%;
+			background-color: #000;
+			height: 83px;
+		}
+		/*.profileWord{
+		left: 95px;
+        position: absolute;
+        top: 160px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		height: 30px;
+		width: 100px;
+		text-align: center;
+		padding-top: 10px;
+		margin-top: 1px;
+		}
+		.profile:hover .profileWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+		 
+		}*/
+		.resume{
+			width: 100%;
+			background-color: #660000;
+			height: 80px;
+		}
+		/*.resumeWord{
+		left: 95px;
+        position: absolute;
+        top: 250px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		height: 30px;
+		width: 100px;
+		text-align: center;
+		padding-top: 10px;
+		margin-top: 1px;
+		}
+		.resume:hover .resumeWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+		 
+		}*/
+		.contact{
+			width: 100%;
+			background-color: #000;
+			height: 80px;
+		}
+		/*.contactWord{
+		left: 95px;
+        position: absolute;
+        top: 325px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		height: 30px;
+		width: 100px;
+		text-align: center;
+		padding-top: 10px;
+		margin-top: 1px;
+		}
+		.contact:hover .contactWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+		 
+		}*/
+		.portofolio{
+			width: 100%;
+			background-color: #660000;
+			height: 85px;
+		}
+		/*.portofolioWord{
+		left: 95px;
+        position: absolute;
+        top: 410px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		height: 30px;
+		width: 100px;
+		text-align: center;
+		padding-top: 10px;
+		margin-top: 1px;
+		}
+		.portofolio:hover .portofolioWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+		 
+		}*/
+		.kotak-1{
+			width:50%;
+			background-color: #de3926;
+			height: 97px;
+			float: right;
+			margin-top: 100px;
+			color: #fff;
+			font-size: 60px;
+			font-family: Animal;
+			text-align: center;
+			padding: 2px;
+		}
+		.kotak-2{
+			width: 50%;
+			background-color: #222222;
+			height: 97px;
+			margin-top: 100px;
+			color: #fff;
+			font-size: 60px;
+			font-family: Animal;
+			text-align: center;
+			padding: 2px;
+		}
+		.kotak-3{
+			width: 80%;
+			background-color: #fff;
+			height: 100px;
+			margin-top: 0px;
+			color: #000;
+			font-size: 15px;
+			font-family: Animal;
+			text-align: center;
+			display: flex;
+		}
+		.kotak-3 h1{
+			margin: auto;
+		}
+
+		.social{
+			width: 70%;
+			background-color: #fff;
+			height: 68px;
+			margin-top: 160px;
+		}
+		/*.twitter{
+			width: 12%;
+			background-color: #fff;
+			height: 63px;
+			float: left;
+			border-right: 1px solid #000;
+		}
+		.twitterWord{
+		left: 725px;
+        position: absolute;
+        top: 460px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		}
+		.twitter:hover .twitterWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s;
+		 
+		}
+		.google-plus{
+			width: 5%;
+			background-color: #fff;
+			height: 63px;
+			float: left;
+			border-right: 1px solid #000;
+		}
+		.google-plusWord{
+		left: 790px;
+        position: absolute;
+        top: 460px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		}
+		.google-plus:hover .google-plusWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+		}
+		.path{
+			width: 20%;
+			background-color: #66CCCC;
+			height: 63px;
+			float: left;
+			border-right: 1px solid #000;
+		}
+		.pathWord{
+		left: 850px;
+        position: absolute;
+        top: 460px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		}
+		.path:hover .pathWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+		}
+		.in{
+			width: 8%;
+			background-color: #66CCCC;
+			height: 50px;
+			float: left;
+			border-left: 1px solid #000;
+		}
+		.inWord{
+		left: 600px;
+        position: absolute;
+        top: 460px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		}
+		.in:hover .inWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+		}
+		.vi{
+			width: 12%;
+			background-color: #66CCCC;
+			height: 63px;
+			float: left;
+			border-left: 1px solid #000;
+		}
+		.viWord{
+		left: 800px;
+        position: absolute;
+        top: 460px;
+        visibility: hidden;
+		background-color: #000;
+		opacity: 0;
+		color: #fff;
+		}
+		.vi:hover .viWord{
+		 visibility: visible;
+		 opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+		}*/
+
+		
+       .footer {
+       	height: 50px;
+  background-color: color= #a8a8a8;
+  color: white;
+  text-align: center;
+  padding: 20px 0px 30px;
+  font-family: "Muli", sans-serif;
+}
+
+footer h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 4px;
+  line-height: 25px;
+}
+
+footer .first {
+  font-family: "Muli", sans-serif;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+footer .first img {
+  margin-top: -30px;
+  max-width: 190px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+  footer .first img {
+    margin-top: 15px;
+  }
+}
+
+footer .first p {
+  line-height: 10px;
+}
+
+footer .twice {
+  font-family: "Muli", sans-serif;
+}
+
+footer .twice .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer .twice .title img {
+  max-height: 50px;
+  display: inline;
+  margin-right: 20px;
+}
+
+footer .twice p {
+  line-height: 10px;
+}
+
+footer .third {
+  font-family: "Muli", sans-serif;
+}
+
+footer .third .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer .third .title img {
+  max-height: 50px;
+  margin-right: 20px;
+  display: inline;
+}
+
+footer .third p {
+  line-height: 10px;
+}
+
+footer .copyright {
+  margin-top: 100px;
+}
+
+footer .copyright a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .copyright a:hover {
+  text-decoration: none;
+  color: #2a5699;
+}
+
+		</style>
+<body>
+		<div class="sidebar">
+		<div class="sidebar-1">
+		<img src="image/Botton.png">
+		<span class="sidebarword">Search</span>
+		
+		</div>
+		<div class="sidebar-2">
+		<div class="home">
+		<a href="index.html">
+		<img src="image/Home1.png">
+		</a>	
+		<span class="homeWord">HOME</span>
+		</div>
+		<div class="profile">
+		<a href="profile.html" data-toggle="tooltip" data-placement="buttom" title="Profile!">
+		<img src="image/ProfileCV.png">
+		</a>
+		<span class="profileWord">PROFILE</span>
+		</div>
+		<div class="resume">
+		<a href="#"  data-toggle="tooltip" data-placement="buttom" title="Resume!">
+		<img src="image/ResumeCV.png">
+		</a>
+		<span class="resumeWord">RESUME</span>
+		</div>
+		<div class="contact">
+		<a href="contact.html" data-toggle="tooltip" data-placement="buttom" title="Contact!">
+		<img src="image/contactCV.png">
+		<span class="contactWord">CONTACT</span>
+		</div>
+		<div class="portofolio">
+		<a href="portofolio.html" data-toggle="tooltip" data-placement="buttom" title="Portofolio!">
+		<img src="image/portofolioCV.png">
+		
+		</div>
+		</div>
+	</div>
+	<div class="content">
+	<div class="content-1">
+	<div class="kotak-1">
+	<h1>MARIA</h1>
+	</div>
+	</div>
+	<div class="content-2">
+	<div class="kotak-2">
+	<h1>GIANTI</h1>
+	</div>
+	<div class="kotak-3">
+		<h1>SMK WIKRAMA BOGOR</h1>
+	</div>
+	<div class="social">
+		<!--div class="twitter">
+		<a href="https://twitter.com/">
+		<img src="image/Twitter.png">
+		<span class="twitterWord">Twitter</span>
+		</div>
+		<div class="google-plus">
+		<a href="https://plus.google.com"
+		<img src="image/Googleplus.png">
+		<span class="google-plusWord">Google++</span>
+		</div>
+		<div class="path">
+		<img src="image/SosialMedia.png">
+		<span class="pathword"></span>
+		</div>
+		<div class="in">
+		<img src="image/in.png">
+		<span class="inword"></span>
+		</div>
+		<div class="vi">
+		<img src="image/vi.png">
+		<span class="viword"></span>
+		</div-->
+	</div>
+
+
+	</div>
+	<div class="footer">
+	 <div class="copyright clearfix">
+                    <p>Powered by <a href="#" target="_blank">MariaGianti</a> © 2015 - 
+                        <a href="#" target="_blank">Maria Gianti</a>. All Rights Reserved</p>
+                </div>
+	</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
+</html>
