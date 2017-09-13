@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	</head>
+<style>
+	body{
+ background: #F2F2F2;
+ font-family: sans-serif;
+}
+.kalkulator{
+ width: 335px;
+ background: #2F495A;
+ margin: 100px auto;
+ padding: 10px 20px 50px 20px;
+ border-radius: 5px;
+ box-shadow: 0px 10px 20px 0px #D1D1D1;
+}
+.bil{
+ width: 300px;
+ margin: 5px;
+ border: none;
+ font-size: 16pt;
+ border-radius: 5px;
+ padding: 10px; 
+}
+.opt{
+ font-size: 16pt;
+ border: none;
+ width: 300px;
+ margin: 5px;
+ border-radius: 5px;
+ padding: 10px;
+}
+.tombol{
+ 	background: #EC5159;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ border-radius: 5px;
+ padding: 10px 20px;
+ color: #eee;
+ font-size: 15pt;
+ border-bottom:4px solid #BF3D3D;
+}
+.brand{
+ color: #eee;
+ font-size: 11pt;
+ float: right;
+ text-decoration: none;
+ margin: 12px;
+}
+.judul{
+ text-align: center;
+ color: #eee;
+ font-weight: normal;
+}
+</style>
+
+
+<div class="container">
+<body>
+
+<div class="kalkulator">
+  <h2 class="judul">KALKULATOR</h2>
+ 
+   <form name = "form1" action="#"> 
+   <input type="text" id="bil1" name="x" class="bil" autocomplete="off" placeholder="Bilangan Pertama">
+   <input type="text" id="bil2" name="y" class="bil" autocomplete="off" placeholder="Bilangan Kedua">
+   <select class="opt" id="opt">
+    <option value="tambah">+</option>
+    <option value="kurang">-</option>
+    <option value="kali">x</option>
+    <option value="bagi">/</option>
+   </select>
+ 	<center>
+   <input type="button" name="hitung" id="hasil" value="Hitung" class="tombol" onClick="hitung()"/>   
+   <input type="button" value="CLEAR" class="tombol" onClick="resetForm()" />
+   </center>
+     <input type="text" id="hasil" name="hasil" class="hasil" disabled="true">
+	
+  </form>
+   
+ </div>
+
+ 		 <script type="text/javascript">
+ 		 	function hitung(){
+ 		 		var bil1 = document.getElementById('bil1').value;
+ 		 		var bil2 = document.getElementById('bil2').value;
+ 		 		var oper = document.getElementById('opt').value;
+ 		 		//var hasil = document.getElementById('hasil').value;
+ 		 		if(oper === 'tambah')
+ 		 		{
+ 		 			document.getElementById('hasil').value = bil1+bil2;
+ 		 		}
+ 		 	}
+           // function hitung(){
+            //	var pil = document.getElementById("opt");
+			//	var strg=pil.options[pil.selectedIndex].value;
+              //  var x=parseInt(document.getElementById("bil1").value);
+				//var y=parseInt(document.getElementById("bil2").value);
+				//var hasil=0;
+				//	if (strg == "tambah") {
+				//	var hasil = x + y;
+				//	 }else if (strg == "kurang") {
+				//	var hasil = x - y;
+				//	 } else if (strg == "kali") {
+				//	var hasil = x * y;
+				//	 } else (strg == "bagi") {
+				//	var hasil = x / y;
+				//	 }
+				//	function resetForm(){
+				//	document.form1.reset();
+				
+				}
+					
+        </script>
+</body>
+</div>
+</html>
